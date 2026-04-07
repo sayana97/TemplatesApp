@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Templates Gallery</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Overleaf CSS -->
+  <link rel="stylesheet" href="https://cdn.overleaf.com/stylesheets/main-style-b5812522d5c68e389f8d.css">
+
+  <!-- Custom styling -->
+  <style>
+    h1 {
+      font-weight: 700;
+    }
+
+    .template-card {
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.2s ease;
+    }
+
+    .template-card img {
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .template-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .category-card {
+      border-radius: 10px;
+      transition: 0.2s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="website-redesign" data-theme="default">
+
+  <!-- React mounts here -->
+  <div id="root"></div>
+
+  <!-- React entry -->
+  <script type="module" src="/src/main.tsx"></script>
+
+</body>
+
+</html>
