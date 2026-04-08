@@ -46,7 +46,7 @@ public class TemplateController {
 
         Template t = service.getById(id);
 
-        Path path = Paths.get("backend/storage/" + t.getZipPath());
+        Path path = Paths.get("storage/" + t.getZipPath());
 
         System.out.println("DEBUG PATH: " + path.toAbsolutePath());
 
