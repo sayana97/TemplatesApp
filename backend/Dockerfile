@@ -11,5 +11,6 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/backend/storage ./storage
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
