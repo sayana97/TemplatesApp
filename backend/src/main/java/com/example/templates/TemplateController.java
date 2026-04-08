@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 
 @RestController
 @RequestMapping("/templates")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class TemplateController {
 
     private final TemplateService service;
