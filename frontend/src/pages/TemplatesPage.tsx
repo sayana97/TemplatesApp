@@ -9,7 +9,7 @@ export default function TemplatesPage() {
   const [templates, setTemplates] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/templates")
+    fetch("https://templatesapp.onrender.com/templates")
       .then(res => res.json())
       .then(setTemplates);
   }, []);
@@ -103,7 +103,7 @@ export default function TemplatesPage() {
                   <Link to={`/templates/${t.id}`}>
                     <div className="thumbnail text-center">
                       <img
-                        src={`http://localhost:8080/${t.imagePath}`}
+                        src={`https://templatesapp.onrender.com/${t.imagePath}`}
                         alt={t.title}
                         loading="lazy"
                         style={{

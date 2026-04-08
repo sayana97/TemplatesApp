@@ -6,7 +6,7 @@ export default function CategoryPage() {
   const [templates, setTemplates] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/templates/category/${category}`)
+    fetch(`https://templatesapp.onrender.com/templates/category/${category}`)
       .then(res => res.json())
       .then(setTemplates);
   }, [category]);
@@ -29,7 +29,7 @@ export default function CategoryPage() {
 
               <Link to={`/templates/${t.id}`}>
                 <img
-                  src={`http://localhost:8080/${t.imagePath}`}
+                  src={`https://templatesapp.onrender.com/${t.imagePath}`}
                   style={{
                     width: "100%",
                     height: "300px",

@@ -6,7 +6,7 @@ export default function TemplateDetail() {
     const [template, setTemplate] = useState<any>(null);
 
     useEffect(() => {
-        fetch(`http://localhost:8080/templates/${id}`)
+        fetch(`https://templatesapp.onrender.com/templates/${id}`)
             .then(res => res.json())
             .then(setTemplate);
     }, [id]);
@@ -37,7 +37,7 @@ export default function TemplateDetail() {
                                 Open as template
                             </button>
 
-                            <a href={`http://localhost:8080/templates/download/${template.id}`}>
+                            <a href={`https://templatesapp.onrender.com/templates/download/${template.id}`}>
                                 <button className="btn btn-success btn-lg">
                                     Download
                                 </button>
@@ -48,7 +48,7 @@ export default function TemplateDetail() {
 
                     <div className="col-md-6 text-center">
                         <img
-                            src={`http://localhost:8080/${template.imagePath}`}
+                            src={`https://templatesapp.onrender.com/${template.imagePath}`}
                             className="img-fluid rounded shadow"
                             style={{ maxHeight: "500px" }}
                         />
